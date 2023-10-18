@@ -50,6 +50,13 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+
+        <dependency>
+            <groupId>com.pinterest</groupId>
+            <artifactId>ktlint</artifactId>
+            <version>${ktlint.version}</version>
+            <scope>runtime</scope>
+        </dependency>
     </dependencies>
 
     <build>
@@ -72,21 +79,6 @@
                 </executions>
             </plugin>
 
-            <!-- KtLint Plugin -->
-            <plugin>
-                <groupId>com.pinterest.ktlint</groupId>
-                <artifactId>ktlint-core</artifactId>
-                <version>${ktlint.version}</version>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>format</goal>
-                            <goal>lint</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-
             <!-- SpotBugs Plugin -->
             <plugin>
                 <groupId>com.github.spotbugs</groupId>
@@ -101,6 +93,8 @@
                     </execution>
                 </executions>
             </plugin>
+
+            <!-- KtLint Plugin -->
 
             <plugin>
                 <groupId>org.jetbrains.kotlin</groupId>

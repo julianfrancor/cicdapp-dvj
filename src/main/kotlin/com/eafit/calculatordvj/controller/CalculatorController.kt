@@ -15,14 +15,6 @@ class CalculatorController {
     @GetMapping("/")
     fun index(@RequestParam("name") name: String) = "Hello, $name!"
 
-    // Endpoint: /
-    // Description: Displays a welcome message with information about the application's capabilities.
-    // Example: http://localhost:8081/
-    @GetMapping("/")
-    fun index(): String {
-        return "Welcome! This application helps to calculate squares, cubes, sums, and differences of numbers."
-    }
-
     // Endpoint: /hello
     // Parameters: name (optional)
     // Description: Greets the user with the provided name or a default greeting if no name is provided.

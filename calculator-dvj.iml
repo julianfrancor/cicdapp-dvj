@@ -55,8 +55,6 @@
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot:3.1.4" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-autoconfigure:3.1.4" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-logging:3.1.4" level="project" />
-    <orderEntry type="library" name="Maven: ch.qos.logback:logback-classic:1.4.11" level="project" />
-    <orderEntry type="library" name="Maven: ch.qos.logback:logback-core:1.4.11" level="project" />
     <orderEntry type="library" name="Maven: org.apache.logging.log4j:log4j-to-slf4j:2.20.0" level="project" />
     <orderEntry type="library" name="Maven: org.apache.logging.log4j:log4j-api:2.20.0" level="project" />
     <orderEntry type="library" name="Maven: org.slf4j:jul-to-slf4j:2.0.9" level="project" />
@@ -115,5 +113,36 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-jcl:6.0.12" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.springframework:spring-test:6.0.12" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.xmlunit:xmlunit-core:2.9.1" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: com.pinterest:ktlint:0.49.1" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.22" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.22" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: com.pinterest.ktlint:ktlint-core:0.49.1" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: org.jetbrains.kotlin:kotlin-compiler-embeddable:1.8.22" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: org.jetbrains.kotlin:kotlin-script-runtime:1.8.22" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: org.jetbrains.kotlin:kotlin-daemon-embeddable:1.8.22" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: org.jetbrains.intellij.deps:trove4j:1.0.20200330" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: net.java.dev.jna:jna:5.6.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: org.ec4j.core:ec4j-core:0.3.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: com.pinterest.ktlint:ktlint-logger:0.49.1" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: io.github.microutils:kotlin-logging-jvm:3.0.5" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: com.pinterest.ktlint:ktlint-reporter-baseline:0.49.1" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: com.pinterest.ktlint:ktlint-rule-engine-core:0.49.1" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: com.pinterest.ktlint:ktlint-cli-reporter:0.49.1" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: com.pinterest.ktlint:ktlint-reporter-plain:0.49.1" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: com.pinterest.ktlint:ktlint-rule-engine:0.49.1" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: com.pinterest.ktlint:ktlint-ruleset-standard:0.49.1" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: com.pinterest.ktlint:ktlint-cli-ruleset-core:0.49.1" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: info.picocli:picocli:4.7.1" level="project" />
+    <orderEntry type="library" name="Maven: ch.qos.logback:logback-classic:1.4.11" level="project" />
+    <orderEntry type="library" name="Maven: ch.qos.logback:logback-core:1.4.11" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: com.pinterest.ktlint:ktlint-reporter-checkstyle:0.49.1" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: com.pinterest.ktlint:ktlint-reporter-json:0.49.1" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: com.pinterest.ktlint:ktlint-reporter-format:0.49.1" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: com.pinterest.ktlint:ktlint-reporter-html:0.49.1" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: com.pinterest.ktlint:ktlint-reporter-plain-summary:0.49.1" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: com.pinterest.ktlint:ktlint-reporter-sarif:0.49.1" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: io.github.detekt.sarif4k:sarif4k:0.2.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: org.jetbrains.kotlinx:kotlinx-serialization-json-jvm:1.4.1" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: org.jetbrains.kotlinx:kotlinx-serialization-core-jvm:1.4.1" level="project" />
   </component>
 </module>
