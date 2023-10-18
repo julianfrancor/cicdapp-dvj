@@ -6,8 +6,18 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="kotlin-webapp" />
+        <module name="calculator-dvj" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="calculator-dvj" target="17" />
+      <module name="cicdapp-dvj" target="1.5" />
+      <module name="kotlin-webapp" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="calculator-dvj" options="-parameters" />
+    </option>
   </component>
 </project>
