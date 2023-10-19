@@ -10,7 +10,7 @@ class CalculatorController {
     private var calculator: Calculator = Calculator()
 
     // Endpoint: /
-    // Description: Displays a welcome message.
+    // Description: Displays a welcome message...
     // Example: http://localhost:8081/?name=John
     @GetMapping("/")
     fun index(@RequestParam("name") name: String) = "Hello, $name!"
