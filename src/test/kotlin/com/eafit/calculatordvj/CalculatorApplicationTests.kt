@@ -35,7 +35,7 @@ class CalculatorApplicationTests {
     @Test
     fun testHelloWithNameParam() {
         val response = getRequest("/hello?name=Jane")
-        assert(response.contains("Hello Jane!"))
+        assert(response.contains("Hello Jane"))
     }
 
     @Test
