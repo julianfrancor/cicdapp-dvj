@@ -8,7 +8,7 @@ import org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers.*
 
 @WebMvcTest(CalculatorController::class)
-class CalculatorControllerTests {
+class CalculatorControllerTest {
 
     @Autowired
     private lateinit var mockMvc: MockMvc
