@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.eafit</groupId>
-    <artifactId>calculator-dvj</artifactId>
+    <artifactId>cicdapp-dvj</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>calculator-dvj</name>
-    <description>calculator-dvj</description>
+    <name>cicdapp-dvj</name>
+    <description>cicdapp-dvj</description>
     <properties>
         <java.version>17</java.version>
         <kotlin.version>1.8.22</kotlin.version>
