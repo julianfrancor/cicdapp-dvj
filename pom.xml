@@ -15,7 +15,7 @@
     <description>cicdapp-dvj</description>
     <properties>
         <java.version>11</java.version>
-        <kotlin.version>1.8.22</kotlin.version>
+        <kotlin.version>1.5.31</kotlin.version>
         <jacoco.version>0.8.7</jacoco.version>
         <ktlint.version>0.49.1</ktlint.version>
         <spotbugs.version>4.7.3.5</spotbugs.version>
@@ -95,7 +95,6 @@
             </plugin>
 
             <!-- KtLint Plugin -->
-
             <plugin>
                 <groupId>org.jetbrains.kotlin</groupId>
                 <artifactId>kotlin-maven-plugin</artifactId>
@@ -107,6 +106,7 @@
                     <compilerPlugins>
                         <plugin>spring</plugin>
                     </compilerPlugins>
+                    <jvmTarget>11</jvmTarget> <!-- Set JVM target to 11 -->
                 </configuration>
                 <dependencies>
                     <dependency>
