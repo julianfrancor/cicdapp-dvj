@@ -16,7 +16,7 @@ phases:
   post_build:
     commands:
       - mvn package
-      - mv target/protobootapp-0.0.1-SNAPSHOT.jar root.jar
+      - mv target/cicdapp-dvj-0.0.1-SNAPSHOT.jar root.jar
       # - command
 reports:
   jacoco-report:
