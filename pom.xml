@@ -106,7 +106,7 @@
                     <compilerPlugins>
                         <plugin>spring</plugin>
                     </compilerPlugins>
-                    <jvmTarget>11</jvmTarget> <!-- Set JVM target to 11 -->
+                    <jvmTarget>17</jvmTarget> <!-- Set JVM target to 11 -->
                 </configuration>
                 <dependencies>
                     <dependency>
