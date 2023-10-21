@@ -14,7 +14,7 @@
     <name>cicdapp-dvj</name>
     <description>cicdapp-dvj</description>
     <properties>
-        <java.version>17</java.version>
+        <java.version>11</java.version>
         <kotlin.version>1.8.22</kotlin.version>
         <jacoco.version>0.8.7</jacoco.version>
         <ktlint.version>0.49.1</ktlint.version>
