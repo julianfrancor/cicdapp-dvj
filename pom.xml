@@ -74,6 +74,17 @@
         <testSourceDirectory>${project.basedir}/src/test/kotlin</testSourceDirectory>
         <plugins>
 
+         <!-- Main-Class and Start-Class  -->
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <mainClass>com.eafit.calculatordvj.CalculatorApplication</mainClass>
+                    <layout>JAR</layout>
+                </configuration>
+            </plugin>
+
+
             <!-- Jacoco Plugin -->
             <plugin>
                 <groupId>org.jacoco</groupId>
