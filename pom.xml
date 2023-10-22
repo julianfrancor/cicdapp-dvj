@@ -79,7 +79,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <mainClass>com.eafit.calculatordvj.CalculatorApplication</mainClass>
+                    <mainClass>src.main.kotlin.com.eafit.calculatordvj.CalculatorApplication</mainClass>
                     <layout>JAR</layout>
                 </configuration>
             </plugin>
