@@ -1,49 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator-dvj App</title>
+    <title>Welcome to the Calculator-dvj App</title>
     <style>
         body {
+            background-image: url('https://raw.githubusercontent.com/julianfrancor/cicdapp-dvj/main/assets/53787841/4f3b0f1b-0504-4f60-a3d8-4215e64ba706');
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: #ffffff;
             font-family: Arial, sans-serif;
             text-align: center;
-            margin: 50px;
         }
+
+        .container {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 50px auto;
+            max-width: 600px;
+        }
+
         h1 {
             font-size: 2em;
             margin-bottom: 20px;
         }
+
         p {
             font-size: 1.2em;
             margin-bottom: 10px;
         }
+
         button {
+            background-color: #007bff;
+            border: none;
+            color: #ffffff;
             padding: 10px 20px;
             font-size: 1em;
-            margin: 10px;
-            border: none;
             cursor: pointer;
-            background-color: #007BFF;
-            color: #ffffff;
+            margin: 10px;
             border-radius: 5px;
             transition: background-color 0.3s;
         }
+
         button:hover {
             background-color: #0056b3;
         }
     </style>
 </head>
-<body>
-<h1>Welcome to the Calculator-DavidVictorJulian App</h1>
-<p>This is a simple calculator application that allows you to perform basic mathematical operations.</p>
-<p>Click on the buttons below to get started:</p>
-<button onclick="window.location.href='/api/square?firstNumber=5'">Calculate Square</button>
-<button onclick="window.location.href='/api/cube?firstNumber=3'">Calculate Cube</button>
-<button onclick="window.location.href='/api/sum?firstNumber=10&secondNumber=7'">Calculate Sum</button>
-<button onclick="window.location.href='/api/subtract?firstNumber=15&secondNumber=8'">Calculate Difference</button>
 
-<!-- Add a button to redirect to Swagger UI -->
-<button onclick="window.location.href='/swagger-ui/index.html'">Open Swagger UI</button>
+<body>
+<div class="container">
+    <h1>Welcome to the Calculator-App</h1>
+    <h2>by David, Victor & Julian</h2>
+    <p>This is a simple calculator application that allows you to perform basic mathematical operations.</p>
+    <p>Click on the buttons below to get started:</p>
+    <button onclick="window.location.href='/api/square?firstNumber=5'">Calculate Square</button>
+    <button onclick="window.location.href='/api/cube?firstNumber=3'">Calculate Cube</button>
+    <button onclick="window.location.href='/api/sum?firstNumber=10&secondNumber=7'">Calculate Sum</button>
+    <button onclick="window.location.href='/api/subtract?firstNumber=15&secondNumber=8'">Calculate Difference</button>
+
+    <!-- Add a button to redirect to Swagger UI -->
+    <button onclick="window.location.href='/swagger-ui/index.html'">Open Swagger UI</button>
+</div>
 </body>
+
 </html>
