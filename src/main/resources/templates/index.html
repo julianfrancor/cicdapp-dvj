@@ -48,6 +48,14 @@
         button:hover {
             background-color: #0056b3;
         }
+
+        .swagger-button {
+            background-color: #62a03f; /* Green color for Swagger button */
+        }
+
+        .swagger-button:hover {
+            background-color: #4c8033; /* Slightly darker shade */
+        }
     </style>
 </head>
 
@@ -63,7 +71,7 @@
     <button onclick="window.location.href='/api/subtract?firstNumber=15&secondNumber=8'">Calculate Difference</button>
 
     <!-- Add a button to redirect to Swagger UI -->
-    <button onclick="window.location.href='/swagger-ui/index.html'">Open Swagger UI</button>
+    <button class="swagger-button" onclick="window.location.href='/swagger-ui/index.html'">Open Swagger UI</button>
 </div>
 </body>
 
