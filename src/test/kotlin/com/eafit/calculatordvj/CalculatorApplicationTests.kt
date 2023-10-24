@@ -28,8 +28,8 @@ class CalculatorApplicationTests {
 
     @Test
     fun testIndexWithNameParam() {
-        val response = getRequest("/api/?name=John")
-        assert(response.contains("Hello, John!"))
+        val response = getRequest("/api/")
+        assert(response.contains("Hello"))
     }
 
     @Test

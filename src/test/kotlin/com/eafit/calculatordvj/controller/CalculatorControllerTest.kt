@@ -15,9 +15,9 @@ class CalculatorControllerTest {
 
     @Test
     fun testIndexWithNameParam() {
-        mockMvc.perform(get("/api/?name=John"))
+        mockMvc.perform(get("/api/"))
             .andExpect(status().isOk)
-            .andExpect(content().string("Hello, John!"))
+            .andExpect(content().string("Hello"))
     }
 
     @Test

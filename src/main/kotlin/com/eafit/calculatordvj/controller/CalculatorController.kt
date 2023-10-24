@@ -26,7 +26,7 @@ class CalculatorController {
     // Description: Displays a welcome message...
     // Example: http://localhost:5000/api/?name=John
     @GetMapping("/")
-    fun index() = "hello"
+    fun index() = "Hello"
 
     // Endpoint: /hello
     // Parameters: name (optional)
