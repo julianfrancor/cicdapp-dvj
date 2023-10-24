@@ -28,43 +28,43 @@ class CalculatorApplicationTests {
 
     @Test
     fun testIndexWithNameParam() {
-        val response = getRequest("/?name=John")
+        val response = getRequest("/api/?name=John")
         assert(response.contains("Hello, John!"))
     }
 
     @Test
     fun testHelloWithNameParam() {
-        val response = getRequest("/hello?name=Jane")
+        val response = getRequest("/api/hello?name=Jane")
         assert(response.contains("Hello Jane!"))
     }
 
     @Test
     fun testHelloWithoutNameParam() {
-        val response = getRequest("/hello")
+        val response = getRequest("/api/hello")
         assert(response.contains("Hello World!"))
     }
 
     @Test
     fun testSquare() {
-        val response = getRequest("/square?firstNumber=5")
+        val response = getRequest("/api/square?firstNumber=5")
         assert(response.contains("The square of 5.0 is 25.0"))
     }
 
     @Test
     fun testCube() {
-        val response = getRequest("/cube?firstNumber=3")
+        val response = getRequest("/api/cube?firstNumber=3")
         assert(response.contains("The cube of 3.0 is 27.0"))
     }
 
     @Test
     fun testSum() {
-        val response = getRequest("/sum?firstNumber=10&secondNumber=7")
+        val response = getRequest("/api/sum?firstNumber=10&secondNumber=7")
         assert(response.contains("The sum of 10.0 and 7.0 is 17.0"))
     }
 
     @Test
     fun testSubtract() {
-        val response = getRequest("/subtract?firstNumber=15&secondNumber=8")
+        val response = getRequest("/api/subtract?firstNumber=15&secondNumber=8")
         assert(response.contains("The difference of 15.0 and 8.0 is 7.0"))
     }
 }
