@@ -84,16 +84,16 @@ jobs:
           name: jacoco-resources
           path: target/site/jacoco
 
-      - name: Jacoco Report to PR
-        id: jacoco
-        uses: madrapps/jacoco-report@v1.3
+      - name: JaCoCo Report
+        uses: Madrapps/jacoco-report@v1.6.1
         with:
-          paths: ${{ github.workspace }}/target/site/jacoco/index.html
+          paths: |
+            ${{ github.workspace }}/**/build/reports/jacoco/prodNormalDebugCoverage/prodNormalDebugCoverage.xml,
+            ${{ github.workspace }}/**/build/reports/jacoco/**/debugCoverage.xml
           token: ${{ secrets.CALCULATOR_APP_SECRET }}
-          debug-mode: false
+          title: '# :lobster: Coverage Report'
           min-coverage-overall: 50
           min-coverage-changed-files: 50
-          title: '# :lobster: Coverage Report'
 
       - name: Get the Coverage info
         run: |
