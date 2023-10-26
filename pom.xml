@@ -125,7 +125,7 @@
                         <goals><goal>check</goal></goals>
                         <configuration>
                             <report>xml:reports/detekt.xml</report>
-                            <baseline>baseline.xml</baseline>
+                            <baseline>baseline-cicdapp-dvj.xml</baseline>
                         </configuration>
                     </execution>
                 </executions>
