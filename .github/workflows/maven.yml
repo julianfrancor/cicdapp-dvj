@@ -52,4 +52,4 @@ jobs:
           java-version: '17'
           distribution: 'adopt'
           cache: maven
-      - run: mvn -B detekt:check --no-transfer-progress -Ddetekt.baseline=baseline.xml --file pom.xml
+      - run: mvn -B detekt:check --no-transfer-progress -Ddetekt.baseline=baseline-cicdapp-dvj.xml --file pom.xml
