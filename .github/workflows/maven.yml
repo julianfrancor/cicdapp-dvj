@@ -92,7 +92,6 @@ jobs:
           echo "========= ${{ github.workspace }}/target/site/jacoco ========="
           ls -R ${{ github.workspace }}/target/site/jacoco
           cat ${{ github.workspace }}/target/site/jacoco/index.html
-          
           echo "Total coverage ${{ steps.jacoco.outputs }}"
 
       - name: JaCoCo Report
