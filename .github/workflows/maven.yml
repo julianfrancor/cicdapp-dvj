@@ -78,12 +78,6 @@ jobs:
       - name: Generate JaCoCo Report
         run: mvn jacoco:report
 
-      - name: Upload JaCoCo Reports
-        uses: actions/upload-artifact@v3
-        with:
-          name: jacoco-reports
-          path: target/site/jacoco
-
       - name: Upload JaCoCo Report
         uses: actions/upload-artifact@v3
         with:
