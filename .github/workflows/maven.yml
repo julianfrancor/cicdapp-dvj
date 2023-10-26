@@ -30,7 +30,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/setup-java@v1
         with:
-          java-version: ${{ matrix.java-version }}
+          java-version: '17'
       - run: mvn -B test --no-transfer-progress --file pom.xml
       - uses: actions/upload-artifact@v2
         with:
@@ -47,5 +47,5 @@ jobs:
       - uses: actions/checkout@v3
       - uses: actions/setup-java@v3
         with:
-          java-version: ${{ matrix.java-version }}
+          java-version: '17'
       - run: mvn -B detekt:check --no-transfer-progress -Ddetekt.baseline=baseline.xml --file pom.xml
