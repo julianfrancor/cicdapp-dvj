@@ -84,12 +84,20 @@ jobs:
           name: jacoco-reports
           path: target/site/jacoco
 
+      - name: Fail PR if overall coverage is less than 50%
+        if: ${{ steps.jacoco.outputs.coverage-overall < 50.0 }}
+        uses: actions/github-script@v6
+        with:
+          script: |
+            core.setFailed('Overall coverage is less than 50%!')
+
       - name: JaCoCo Report
         uses: Madrapps/jacoco-report@v1.6.1
         with:
-          paths: |
-            ${{ github.workspace }}/**/index.html
+          paths: ${{ github.workspace }}/build/reports/jacoco/testCoverage/testCoverage.xml
           token: ${{ secrets.CALCULATOR_APP_SECRET }}
           min-coverage-overall: 60
           min-coverage-changed-files: 50
-
+          title: '# :lobster: Coverage Report'
+          pass-emoji: ':green_circle:'
+          fail-emoji: ':red_circle:'
