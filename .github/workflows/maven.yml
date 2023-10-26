@@ -35,7 +35,7 @@ jobs:
           java-version: '17'
           distribution: 'adopt'
       - run: mvn -B test --no-transfer-progress --file pom.xml
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v3
         with:
             name: jacoco-reports
             path: target/site/jacoco
@@ -79,7 +79,7 @@ jobs:
         run: mvn jacoco:report
 
       - name: Upload JaCoCo Reports
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: jacoco-reports
           path: target/site/jacoco
