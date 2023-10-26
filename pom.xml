@@ -73,15 +73,13 @@
             <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
             <version>2.2.0</version>
         </dependency>
-    </dependencies>
 
-<!--    <repositories>-->
-<!--        <repository>-->
-<!--            <id>swagger1</id>-->
-<!--            <name>swagger-snapshot</name>-->
-<!--            <url>http://oss.jfrog.org/artifactory/oss-snapshot-local/</url>-->
-<!--        </repository>-->
-<!--    </repositories>-->
+        <dependency>
+            <groupId>io.gitlab.arturbosch.detekt</groupId>
+            <artifactId>detekt-gradle-plugin</artifactId>
+            <version>1.22.0</version>
+        </dependency>
+    </dependencies>
 
     <build>
         <sourceDirectory>${project.basedir}/src/main/kotlin</sourceDirectory>
@@ -102,7 +100,6 @@
                 </executions>
             </plugin>
 
-
             <!-- Jacoco Plugin -->
             <plugin>
                 <groupId>org.jacoco</groupId>
@@ -112,6 +109,13 @@
                     <execution>
                         <goals>
                             <goal>prepare-agent</goal>
+                            <goal>report</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>report</id>
+                        <phase>prepare-package</phase>
+                        <goals>
                             <goal>report</goal>
                         </goals>
                     </execution>
