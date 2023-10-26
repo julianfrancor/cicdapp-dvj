@@ -85,19 +85,19 @@ jobs:
           path: target/site/jacoco
 
       - name: Show Report Location
-        run: echo "JaCoCo report saved at ${{ github.workspace }}/target/site/jacoco/index.html"
+        run: echo "JaCoCo report saved at ${{ github.workspace }}/target/site/jacoco/jacoco.xml"
 
       - name: Check JaCoCo Report
         run: |
           echo "========= ${{ github.workspace }}/target/site/jacoco ========="
           ls -R ${{ github.workspace }}/target/site/jacoco
-          cat ${{ github.workspace }}/target/site/jacoco/index.html
+          cat ${{ github.workspace }}/target/site/jacoco/jacoco.xml
           echo "Total coverage ${{ steps.jacoco.outputs }}"
 
       - name: JaCoCo Report
         uses: Madrapps/jacoco-report@v1.6.1
         with:
-          paths: ${{ github.workspace }}/target/site/jacoco/index.html
+          paths: ${{ github.workspace }}/target/site/jacoco/jacoco.xml
           token: ${{ secrets.CALCULATOR_APP_SECRET }}
           title: '# :lobster: Coverage Report'
           min-coverage-overall: 10
