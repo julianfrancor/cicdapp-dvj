@@ -81,14 +81,14 @@ jobs:
       - name: Upload JaCoCo Reports
         uses: actions/upload-artifact@v3
         with:
-          name: jacoco-reports
+          name: jacoco-resources
           path: target/site/jacoco
 
       - name: Jacoco Report to PR
         id: jacoco
         uses: madrapps/jacoco-report@v1.3
         with:
-          paths: ${{ github.workspace }}/build/reports/jacoco/testCoverage/testCoverage.xml
+          paths: ${{ github.workspace }}/**/index.xml
           token: ${{ secrets.CALCULATOR_APP_SECRET }}
           debug-mode: false
           min-coverage-overall: 50
