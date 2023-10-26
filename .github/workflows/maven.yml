@@ -88,7 +88,7 @@ jobs:
         uses: Madrapps/jacoco-report@v1.6.1
         with:
           paths: |
-            ${{ github.workspace }}/target/site/jacoco/index.html
+            ${{ github.workspace }}/**/index.html
           token: ${{ secrets.CALCULATOR_APP_SECRET }}
           min-coverage-overall: 60
           min-coverage-changed-files: 50

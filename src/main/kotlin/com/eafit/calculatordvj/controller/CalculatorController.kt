@@ -20,7 +20,7 @@ class CalculatorController {
 
     @GetMapping(value = ["/index"], produces = [MediaType.TEXT_HTML_VALUE])
     fun serveHtml(): ResponseEntity<ByteArray> {
-        val resource = ClassPathResource("templates/index.html")
+        val resource = ClassPathResource("templates/indexPage.html")
         val inputStream = resource.inputStream.readBytes()
 
         return ResponseEntity
