@@ -84,6 +84,14 @@ jobs:
           name: jacoco-resources
           path: target/site/jacoco
 
+      - name: Show Report Location
+        run: echo "JaCoCo report saved at ${{ github.workspace }}/target/site/jacoco/index.html"
+
+      - name: Check JaCoCo Report
+        run: |
+          ls -R ${{ github.workspace }}/target/site/jacoco
+          cat ${{ github.workspace }}/target/site/jacoco/index.html
+
       - name: JaCoCo Report
         uses: Madrapps/jacoco-report@v1.6.1
         with:
