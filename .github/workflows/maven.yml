@@ -89,7 +89,10 @@ jobs:
 
       - name: Check JaCoCo Report
         run: |
+          echo "========= ${{ github.workspace }}/target/site/jacoco ========="
           ls -R ${{ github.workspace }}/target/site/jacoco
+          echo "========= ${{ github.workspace }}/**/build/reports/jacoco/ ========="
+          ls -R ${{ github.workspace }}/**/build/reports/jacoco
           cat ${{ github.workspace }}/target/site/jacoco/index.html
 
       - name: JaCoCo Report
