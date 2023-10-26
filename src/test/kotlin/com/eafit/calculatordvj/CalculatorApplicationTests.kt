@@ -16,10 +16,6 @@ class CalculatorApplicationTests {
     @Autowired
     private lateinit var restTemplate: TestRestTemplate
 
-    @Test
-    fun contextLoads() {
-    }
-
     private fun getRequest(url: String): String {
         val fullUrl = "http://localhost:$port$url"
         val response: ResponseEntity<String> = restTemplate.getForEntity(fullUrl, String::class.java)

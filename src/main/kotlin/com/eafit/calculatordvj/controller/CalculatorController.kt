@@ -4,12 +4,19 @@ import com.eafit.calculatordvj.model.Calculator
 import org.springframework.core.io.ClassPathResource
 import org.springframework.http.MediaType
 import org.springframework.http.ResponseEntity
-import org.springframework.web.bind.annotation.*
+import org.springframework.web.bind.annotation.GetMapping
+import org.springframework.web.bind.annotation.RestController
+import org.springframework.web.bind.annotation.RequestParam
+import org.springframework.web.bind.annotation.RequestMapping
 
 @RestController
 @RequestMapping("/api")
 class CalculatorController {
     private var calculator: Calculator = Calculator()
+
+    companion object {
+        private const val GREETING = "Hello"
+    }
 
     @GetMapping(value = ["/index"], produces = [MediaType.TEXT_HTML_VALUE])
     fun serveHtml(): ResponseEntity<ByteArray> {
@@ -26,7 +33,9 @@ class CalculatorController {
     // Description: Displays a welcome message...
     // Example: http://localhost:5000/api/?name=John
     @GetMapping("/")
-    fun index() = "Hello"
+    fun index(): String {
+        return GREETING
+    }
 
     // Endpoint: /hello
     // Parameters: name (optional)
