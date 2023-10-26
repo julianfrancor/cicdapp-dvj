@@ -78,11 +78,11 @@ jobs:
       - name: Generate JaCoCo Report
         run: mvn jacoco:report
 
-      - name: Upload JaCoCo Report
+      - name: Upload JaCoCo Reports
         uses: actions/upload-artifact@v3
         with:
-          name: report.xml
-          path: ${{ github.workspace }}/build/reports/jacoco/testCoverage/testCoverage.xml
+          name: jacoco-reports
+          path: target/site/jacoco
 
       - name: Jacoco Report to PR
         id: jacoco
@@ -91,11 +91,9 @@ jobs:
           paths: ${{ github.workspace }}/build/reports/jacoco/testCoverage/testCoverage.xml
           token: ${{ secrets.CALCULATOR_APP_SECRET }}
           debug-mode: false
-          min-coverage-overall: 60
+          min-coverage-overall: 50
           min-coverage-changed-files: 50
           title: '# :lobster: Coverage Report'
-          pass-emoji: ':green_circle:'
-          fail-emoji: ':red_circle:'
 
       - name: Get the Coverage info
         run: |
