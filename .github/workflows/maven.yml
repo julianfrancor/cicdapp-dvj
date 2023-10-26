@@ -38,7 +38,7 @@ jobs:
             name: jacoco-reports
             path: target/site/jacoco
 
-  codeQuality:
+  code-quality:
     needs: build
     strategy:
       matrix:
@@ -52,3 +52,30 @@ jobs:
           distribution: 'adopt'
           cache: maven
       - run: mvn -B detekt:check --no-transfer-progress -Ddetekt.baseline=baseline-cicdapp-dvj.xml --file pom.xml
+
+
+  code-coverage:
+    needs: build
+    name: Run JaCoCo
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Set up Java
+        uses: actions/setup-java@v3
+        with:
+          java-version: '17'
+
+      - name: Build and Test
+        run: mvn -B clean verify
+
+      - name: Generate JaCoCo Report
+        run: mvn jacoco:report
+
+      - name: Upload JaCoCo Reports
+        uses: actions/upload-artifact@v2
+        with:
+          name: jacoco-reports
+          path: target/site/jacoco
