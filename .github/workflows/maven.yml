@@ -88,8 +88,7 @@ jobs:
         uses: Madrapps/jacoco-report@v1.6.1
         with:
           paths: |
-            ${{ github.workspace }}/**/build/reports/jacoco/prodNormalDebugCoverage/prodNormalDebugCoverage.xml,
-            ${{ github.workspace }}/**/build/reports/jacoco/**/debugCoverage.xml
+            ${{ github.workspace }}/target/site/jacoco/index.html
           token: ${{ secrets.CALCULATOR_APP_SECRET }}
           min-coverage-overall: 60
           min-coverage-changed-files: 50
