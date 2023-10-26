@@ -25,7 +25,6 @@ jobs:
     strategy:
       matrix:
         os: [ ubuntu-latest ]
-        java-version: '17'
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v2
