@@ -58,7 +58,7 @@ jobs:
 
 
   code-coverage:
-    needs: build test
+    needs: test
     name: Code Coverage
     runs-on: ubuntu-latest
 
