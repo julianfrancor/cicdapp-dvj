@@ -9,7 +9,6 @@ import org.springframework.http.ResponseEntity
 
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 class CalculatorApplicationTests {
-
     @LocalServerPort
     private var port: Int = 0
 
