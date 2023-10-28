@@ -50,7 +50,7 @@ class CalculatorController {
 
     // Endpoint: /square
     // Parameters: firstNumber (optional, defaults to 0)
-    // Description: Calculates and returns the square of the provided number.
+    // Description: Calculates and returns the square of the provided number
     // Example: http://localhost:5000/api/square?firstNumber=5
     @GetMapping("/square")
     fun square(
