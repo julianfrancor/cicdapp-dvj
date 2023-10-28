@@ -45,7 +45,7 @@ class CalculatorController {
     fun hello(
         @RequestParam(value = "name", defaultValue = "World") name: String,
     ): String {
-        return "Hello $name!"
+        return "Hello $name"
     }
 
     // Endpoint: /square
