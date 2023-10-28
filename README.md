@@ -89,6 +89,8 @@ For Continuous Deployment (CD), AWS services were utilized, including AWS CodeBu
 
 By combining GitHub Actions for CI and AWS services for CD, the project achieved an efficient and automated development and deployment pipeline, enhancing the overall development lifecycle.
 
+![CodePipeline](src/main/resources/static/images/codebuild.jpeg)
+
 ## CI/CD Workshop - Design and Construction
 
 ## Getting Started
