@@ -107,6 +107,42 @@ To run this application, follow these steps:
 
 3. Run the application. You can access the API at `http://localhost:5000/api/index`.
 
+
+Certainly! Here are the instructions to add to your README file in English:
+
+---
+
+## Run the Application with Docker
+
+You can run the application using Docker by following these steps:
+
+1. **Build the Docker Image**:
+
+   Execute the following command to build the Docker image:
+
+   ```bash
+   docker build -t calculator_dvj_app .
+   ```
+
+   This will create a Docker image for your application based on the provided Dockerfile.
+
+2. **Start the Container**:
+
+   Once the image is built, you can start a container using the following command:
+
+   ```bash
+   docker run -p 8080:5000 calculator_dvj_app
+   ```
+
+   This will map port 8080 from the container to port 5000 on your local machine.
+
+3. **Access the Application**:
+
+   Open your web browser and go to the application at `http://localhost:8080/api/index`. The application should be up and running, ready for use.
+
+---
+
+
 ## C4 Diagrams
 
 ### C4 System Diagram
